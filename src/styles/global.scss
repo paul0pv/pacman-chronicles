@@ -1,4 +1,4 @@
-@import './variables', './mixins', './components/header' , './components/bento', './components/card', './components/button', './components/footer';
+@import './variables', './mixins', './components/header', './components/bento', './components/hero', './components/card', './components/button', './components/footer';
 
 html,
 body {
@@ -10,7 +10,7 @@ body {
 body {
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  background-color: $secondary-color;
+  background-color: $background-color;
   color: $text-color;
 
   padding: 0;
@@ -21,7 +21,8 @@ body {
 main {
   min-height: calc(100vh - 4rem);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 0 auto;
 
 }

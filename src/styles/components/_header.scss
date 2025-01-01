@@ -2,6 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: $secondary-color;
+    @include glass-panel;
 
     .header-nav {
         width: 80%;
@@ -12,7 +14,7 @@
         .header-navigation {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 1rem;
             list-style-type: none;
         
             @media (max-width: 768px) {
@@ -23,18 +25,20 @@
                 a {
                     text-decoration: none;
                     color: $text-color;
+                    font-weight: 600;
                 
                     &:hover {
                         color: $accent-color;
                     }
                 }
-
-                .header-search {
-                    border: none;
-                    border-radius: 0.5rem;
-                    padding: 0.5rem;
-                }
             }
+        }
+
+        .header-search {
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         }
     }
 }

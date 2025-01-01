@@ -1,0 +1,37 @@
+.hero {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    //background-image: url('/src/assets/Archlinux-background.jpg');
+    //background-repeat: no-repeat;
+    //background-size:cover;
+    //background-attachment: scroll;
+
+    img {
+        position: absolute;
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+    .hero-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        //border-width: 1px;
+        //border-color: $accent-color;
+        //background-color: rgba(255, 255, 255, 0.1);
+        //@include subtle-shadow;
+        //@include glass-panel;
+
+        justify-content: center;
+
+        .hero-title {
+            font-size: 2rem;
+            color: $primary-color;
+        }
+    }
+}
