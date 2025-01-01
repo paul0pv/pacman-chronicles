@@ -12,3 +12,10 @@
       backdrop-filter: blur(10px);
       border-radius: 1rem; // Adjust alpha for transparency
   }
+
+  @mixin title-gradient {
+    background: linear-gradient(to right, $second-accent-color, $primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
