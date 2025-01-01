@@ -32,8 +32,10 @@ main {
 
 h1, h2, h3 {
 
-  @media (max-width: 768px) { // Adaptación para pantallas más pequeñas
-    font-size: small; // Una sola columna en móvil
+  cursor: default;
+
+  @media (max-width: 768px) {
+    font-size: medium; 
   }
 }
 

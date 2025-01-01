@@ -6,20 +6,21 @@
     color: $text-color;
     font-size: medium;
 
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
 
 }
 
 .button-transparent {
     @extend .button;
     background-color: transparent;
-    border: 2px;
-    border-color: $accent-color;
+    border: 0.125rem solid $text-color;
     transition: transform 0.2s ease-in-out;
 
     &:hover {
         transform: scale(1.02);
+        background-color: $text-color;
+        color: $background-color;
     }
 
 }
