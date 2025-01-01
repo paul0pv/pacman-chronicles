@@ -1,3 +1,4 @@
+```
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
@@ -20,3 +21,4 @@ const { Content } = await post.render();
         <Content/>
     </section>
 </Layout>
+```
